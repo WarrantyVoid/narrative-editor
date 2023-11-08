@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/narrative-editor/static/css/main.20b297a5.css",
+    "main.js": "/narrative-editor/static/js/main.6c041287.js",
+    "index.html": "/narrative-editor/index.html",
+    "main.20b297a5.css.map": "/narrative-editor/static/css/main.20b297a5.css.map",
+    "main.6c041287.js.map": "/narrative-editor/static/js/main.6c041287.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20b297a5.css",
+    "static/js/main.6c041287.js"
+  ]
+}
