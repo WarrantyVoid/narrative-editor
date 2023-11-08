@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+.horizontal-layout {
+  display: flex;
+}
+
+.horizontal-fill {
+  width: 100%;
+}
+
+.fixed-title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #2d2f35;
+  width:inherit;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#menu-button-box {
+  display: flex;
+  margin-right: 6px;
+}
+
+#menu-box {
+  display: flex;
+  background-color: #121212;
+  border-bottom: 1px solid #2f2f2f;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 57px;
+}
+
+.menu-item {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+#logo {
+  width: 48px;
+  height: 48px;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0px;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 18px;
+  color: #ffffff;;
+  font-weight: normal;
+}
+
+.header-item {
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+button {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #444856;
+  border: none;
+}
+
+img {
+  object-fit: scale-down;
+}
+
+.menu-button {
+  font-size: 18px;
+  padding: 12px 20px 12px 20px;
+}
+
+.menu-button:hover {
+  color: #000000;
+  background: linear-gradient(0deg, rgb(128, 68, 1) 0%, rgb(250, 192, 0) 100%);
+}
+
+.menu-button:active {
+  background-color: #292b33;
+  transform: translateY(2px);
+}
+
+.content-button {
+  font-size: 13px;
+  width: 40px;
+  padding: 4px 10px 4px 10px;  
+}
+
+.content-button:hover {
+  color: #000000;
+  background: linear-gradient(0deg, rgb(128, 68, 1) 0%, rgb(250, 192, 0) 100%);
+}
+
+.content-button:active {
+  background-color: #292b33;
+  transform: translateY(2px);
+}
+
+.title-editor {
+  margin: 0px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.title-editor input {
+  padding: inherit;
+  font-size: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+.title-editor input:focus {
+  outline: none;
+}
+
+.title-editor img {
+  height: 19px;
+}
+
+.author-editor {
+  margin: 0px;
+  font-size: 14px;
+  color: #5a5f72;
+}
+
+.author-editor input {
+  padding: inherit;
+  font-size: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+.author-editor input:focus {
+  outline: none;
+}
+
+.author-editor img {
+  height: 12px;
+}
+
+.subtitle-editor {
+  margin: 0px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.subtitle-editor input {
+  padding: inherit;
+  font-size: inherit;
+  background: inherit;
+  color: inherit;
+  width: 99%;
+}
+
+.subtitle-editor input:focus {
+  outline: none;
+}
+
+.subtitle-editor img {
+  height: 15px;
+}
+
+.title-button {
+  width: 32px;
+  font-size: 18px;
+}
+
+.title-button:hover {
+  color: #000000;
+  background: linear-gradient(0deg, rgb(128, 68, 1) 0%, rgb(250, 192, 0) 100%);
+}
+
+.title-button:active {
+  background-color: #292b33;
+  transform: translateY(2px);
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #444856;
+  border: none;
+  padding: 6px;
+  text-decoration: none;
+  resize: none;
+  overflow:none;
+  width: 100%;
+}
+
+select {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #444856;
+  border: none;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none;
+}
+
+label {
+  white-space:nowrap;
+}
+
+input {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #444856;
+  border: none;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none; 
+}
+
+button:hover {
+  background: #5a5f72;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.editor-box {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: -57px;
+  padding-top: 57px;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+.editor {
+  background: #1d1e22;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+.entity-header {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  margin: 0px;
+  font-size: 18px;
+  color: #ffffff;;
+  background: linear-gradient(90deg, rgb(22, 34, 71) 0%, rgb(30, 64, 109) 100%);
+  padding-left: 3px;
+  margin-bottom: 3px
+}
+
+.entity-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #2d2f35;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.object-header {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgb(22, 34, 71) 0%, rgb(30, 64, 109) 100%);
+  padding-left: 3px;
+  margin-bottom: 3px
+}
+
+.object-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #2d2f35;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.state-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #5a5f72;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+.effect-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #5a5f72;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+.section-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #2d2f35;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.section-header {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgb(22, 34, 71) 0%, rgb(30, 64, 109) 100%);
+  padding-left: 3px;
+  margin-bottom: 3px
+}
+
+.decision-editor {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #5a5f72;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+.decision-editor span {
+  margin-top: 6px;
+}
+
+#graph {
+  width: 100%;
+  height: 90vh;
+}

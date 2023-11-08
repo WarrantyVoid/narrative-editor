@@ -1,0 +1,118 @@
+.reactflow-wrapper {
+  height: 100%;
+}
+
+.horizontal-layout {
+  display: flex;
+}
+
+.control-img {
+  height: 26px;
+  padding: 4px;
+}
+
+.control-text {
+  height: 26px;
+  padding: 4px 0px 4px 3px;
+}
+
+.control-text-select {
+  color: rgb(233, 162, 30);
+}
+
+.control-panel {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #2d2f35;
+  padding: 6px;
+  user-select: none;
+}
+
+.node-template {
+  width: 151px;
+  height: 26px;
+  text-align: center;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 0px;
+  font-size: 15px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgb(22, 34, 71) 0%, rgb(30, 64, 109) 100%);
+  border: #1a192a 1px solid
+}
+
+.react-flow__controls {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background: #2d2f35;
+  padding: 6px;
+}
+
+.react-flow__controls-button {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  fill: #ffffff;
+  background: #444856;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.react-flow__controls-button:hover {
+  fill: #000000;
+  background: linear-gradient(0deg, rgb(128, 68, 1) 0%, rgb(250, 192, 0) 100%);
+}
+
+.react-flow__controls-button:active {
+  background-color: #292b33;
+  transform: translateY(2px);
+}
+
+.react-flow__node {
+  width: 151px;
+  height: 26px;
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 0px;
+  font-size: 15px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgb(22, 34, 71) 0%, rgb(30, 64, 109) 100%);
+}
+
+.react-flow__node:hover {
+  background: linear-gradient(0deg, rgb(128, 68, 1) 0%, rgb(250, 192, 0) 100%);
+  color: #e7c4c4;
+}
+
+.react-flow__node.selected,
+.react-flow__node:focus,
+.react-flow__node:focus-visible {
+  border-color: rgb(233, 138, 30);
+}
+
+.react-flow__handle {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  border-color: #121212;
+  background: #444856;
+  width: 25px;
+  height: 8px;
+}
+
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:focus .react-flow__edge-path,
+.react-flow__edge:focus-visible .react-flow__edge-path {
+  stroke: rgb(233, 138, 30);
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: rgb(233, 138, 30);
+  stroke-width: 1.5px;
+}
